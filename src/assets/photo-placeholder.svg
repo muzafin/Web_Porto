@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <circle cx="120" cy="120" r="120" fill="url(#grad)"/>
+  <text x="120" y="135" text-anchor="middle" fill="#F0F4F8" font-family="Syne, sans-serif" font-size="48" font-weight="800">MZA</text>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="240" y2="240">
+      <stop offset="0%" stop-color="#00D8FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,47 @@
+export const experiences = [
+  {
+    id: 1,
+    period: "2022 – 2023",
+    role: "Typesetter Komik Jepang",
+    company: "PT. Green Wind Culture",
+    type: "Professional",
+    icon: "🎨",
+    color: "#7C3AED",
+    achievements: [
+      "Performed Japanese manga typesetting, localization, and text layout adaptation for the Indonesian publishing market",
+      "Applied precision redraw techniques to maintain visual consistency across translated panels",
+      "Collaborated with editorial team to meet tight publishing deadlines under high-volume workflow",
+    ],
+    tags: ["Photoshop", "Localization", "Typography", "Layout Design"],
+  },
+  {
+    id: 2,
+    period: "2023",
+    role: "Apprentice Junior Network Engineer",
+    company: "CV. Best Path Solusi",
+    type: "Internship",
+    icon: "🔌",
+    color: "#00D8FF",
+    achievements: [
+      "Contributed to enterprise-grade network infrastructure deployment for BRI & Pertamina sites",
+      "Managed Fiber Optic cable routing, termination, and structured cabling documentation",
+      "Produced detailed technical reports and network topology diagrams for client handover",
+    ],
+    tags: ["Fiber Optic", "Enterprise Network", "Technical Docs", "BRI", "Pertamina"],
+  },
+  {
+    id: 3,
+    period: "2022 – 2023",
+    role: "Apprentice Junior Network Engineer",
+    company: "BLC Telkom Klaten",
+    type: "Apprenticeship",
+    icon: "🌐",
+    color: "#22C55E",
+    achievements: [
+      "Configured Cisco routers and switches for institutional network environments",
+      "Administered Linux servers and assisted in developing the institution's blog and website",
+      "Served as Master of Ceremonies (MC) for large-scale official agency events",
+    ],
+    tags: ["Cisco IOS", "Linux", "Web Development", "Public Speaking"],
+  },
+];
