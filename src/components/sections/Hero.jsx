@@ -14,25 +14,8 @@ const fadeUp = {
 };
 
 export default function Hero() {
-  async function handleDownload() {
-    const cvPath = `${import.meta.env.BASE_URL}cv-zaenal.pdf`;
-    try {
-      const res = await fetch(cvPath);
-      if (!res.ok) throw new Error('Failed to fetch CV');
-      const blob = await res.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'CV-Muhammad-Zaenal-Arifin.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
-    } catch (err) {
-      console.error(err);
-      alert(`Gagal mengunduh CV. Coba buka langsung: ${cvPath}`);
-    }
-  }
+  const cvUrl = `${import.meta.env.BASE_URL}cv-zaenal.pdf`;
+
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-20">
       {/* Background decorations */}
@@ -93,13 +76,13 @@ export default function Hero() {
             <Button variant="primary" href="#projects">
               Explore My Work <ArrowRight size={16} />
             </Button>
-            <button
-              type="button"
-              onClick={handleDownload}
+            <a
+              href={cvUrl}
+              download="CV-Muhammad-Zaenal-Arifin.pdf"
               className="inline-flex items-center gap-2 font-body font-semibold text-sm px-7 py-3 rounded-lg transition-all duration-200 cursor-pointer border border-border-dim text-text-pri hover:border-text-sec hover:bg-white/[0.03] hover:-translate-y-0.5"
             >
               <Download size={16} /> Download CV
-            </button>
+            </a>
           </motion.div>
 
           <motion.div
