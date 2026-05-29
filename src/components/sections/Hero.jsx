@@ -15,8 +15,9 @@ const fadeUp = {
 
 export default function Hero() {
   async function handleDownload() {
+    const cvPath = `${import.meta.env.BASE_URL}cv-zaenal.pdf`;
     try {
-      const res = await fetch('/cv-zaenal.pdf');
+      const res = await fetch(cvPath);
       if (!res.ok) throw new Error('Failed to fetch CV');
       const blob = await res.blob();
       const url = window.URL.createObjectURL(blob);
@@ -29,7 +30,7 @@ export default function Hero() {
       window.URL.revokeObjectURL(url);
     } catch (err) {
       console.error(err);
-      alert('Gagal mengunduh CV. Coba buka langsung: /cv-zaenal.pdf');
+      alert(`Gagal mengunduh CV. Coba buka langsung: ${cvPath}`);
     }
   }
   return (
